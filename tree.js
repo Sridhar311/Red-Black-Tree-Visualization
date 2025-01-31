@@ -190,7 +190,6 @@ class RedBlackTree {
     
         let child, parent;
         if (nodeToDelete.left === this.nullNode || nodeToDelete.right === this.nullNode) {
-            // Node has one or no children
             child = nodeToDelete.left === this.nullNode ? nodeToDelete.right : nodeToDelete.left;
             this.replaceNode(nodeToDelete, child);
             if (nodeToDelete.color === 'BLACK') {
@@ -321,4 +320,5 @@ class RedBlackTree {
         return JSON.stringify(this.inorderTraversal(this.root), null, 2);
     }
 }
+
 window.RedBlackTree = RedBlackTree;
