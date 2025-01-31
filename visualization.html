@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Red-Black Tree Visualization</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+  </head>
+  <body>
+    <header><h1>Red-Black Tree Visualization</h1></header>
+
+    <div class="controls">
+      <input type="number" id="value" placeholder="Enter value" />
+      <button id="insert-btn">Insert</button>
+      <button id="delete-btn">Delete</button>
+      <button id="export-btn">Node-Detail</button>
+    </div>
+    <div id="description-box" class="description">
+      <h3>Operation Steps:</h3>
+      <p id="description-content">
+        Step-by-step explanation will appear here...
+      </p>
+    </div>
+
+    <div class="svg-container">
+      <svg width="1000" height="500"></svg>
+    </div>
+    <script src="tree.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+      document
+        .getElementById("insert-btn")
+        .addEventListener("click", insertNode);
+      document
+        .getElementById("export-btn")
+        .addEventListener("click", exportTree);
+    </script>
+  </body>
+</html>

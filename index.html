@@ -3,39 +3,105 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Red-Black Tree Visualization</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <title>Red-Black Tree Project</title>
+    <link rel="stylesheet" href="style1.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
   </head>
   <body>
-    <header><h1>Red-Black Tree Visualization</h1></header>
+    <header class="hero">
+      <div class="hero-content">
+        <h1>Welcome to the Red-Black Tree Project</h1>
+        <p>
+          Explore the fascinating world of Red-Black Trees, a self-balancing
+          binary search tree.
+        </p>
+        <a href="visualization.html" class="btn">Go to Visualization</a>
+      </div>
+    </header>
 
-    <div class="controls">
-      <input type="number" id="value" placeholder="Enter value" />
-      <button id="insert-btn">Insert</button>
-      <button id="delete-btn">Delete</button>
-      <button id="export-btn">Node-Detail</button>
-    </div>
-    <div id="description-box" class="description">
-      <h3>Operation Steps:</h3>
-      <p id="description-content">
-        Step-by-step explanation will appear here...
-      </p>
-    </div>
+    <main>
+      <section class="intro">
+        <h2>What is a Red-Black Tree?</h2>
+        <p>
+          A Red-Black Tree is a type of binary search tree that maintains
+          balance through specific properties:
+        </p>
+        <ul>
+          <li>Every node is either red or black.</li>
+          <li>The root is always black.</li>
+          <li>
+            Red nodes cannot have red children (no two red nodes can be
+            adjacent).
+          </li>
+          <li>
+            Every path from a node to its descendant NULL nodes has the same
+            number of black nodes.
+          </li>
+        </ul>
+        <p>
+          This project provides an interactive visualization of Red-Black Trees,
+          allowing you to insert, delete, and explore nodes.
+        </p>
+      </section>
 
-    <div class="svg-container">
-      <svg width="1000" height="500"></svg>
-    </div>
-    <script src="tree.js"></script>
-    <script src="script.js"></script>
+      <section class="features">
+        <h2>Key Features</h2>
+        <div class="feature-cards">
+          <div class="card">
+            <h3>Interactive Visualization</h3>
+            <p>
+              Insert, delete, and visualize nodes in real-time with an intuitive
+              interface.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Step-by-Step Explanation</h3>
+            <p>
+              Understand the operations with detailed descriptions of each step.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Responsive Design</h3>
+            <p>
+              Access the tool on any device, from desktops to mobile phones.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
 
-    <script>
-      document
-        .getElementById("insert-btn")
-        .addEventListener("click", insertNode);
-      document
-        .getElementById("export-btn")
-        .addEventListener("click", exportTree);
-    </script>
+    <footer>
+      <p>Created by Sridhar | © 2025 Red-Black Tree Project</p>
+      <div class="social-links">
+        <a
+          href="https://www.linkedin.com/in/r-sridhar-5324b52a6/"
+          target="_blank"
+          class="social-icon"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/curiousity_freak/"
+          target="_blank"
+          class="social-icon"
+        >
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a
+          href="https://github.com/Sridhar311"
+          target="_blank"
+          class="social-icon"
+        >
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+    </footer>
   </body>
 </html>
