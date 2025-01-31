@@ -17,6 +17,7 @@
     🔹 GitHub Pages (for deployment)
 
 👨‍💻 Author
+
 Developed by Sridhar
     📌 GitHub: @Sridhar311
     📌 LinkedIn: [R Sridhar](https://www.linkedin.com/in/r-sridhar-5324b52a6/)
